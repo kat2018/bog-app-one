@@ -1,9 +1,10 @@
-rquire('dotenv').config()
+require('dotenv').config()
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//mogoose setup
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 mongoose.connect(process.nv.MONGODB_URI)
